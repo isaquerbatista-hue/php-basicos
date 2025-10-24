@@ -1,0 +1,85 @@
+/* === ESTILIZANDO TABELAS === */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+/* === Estilo base para todas as tabelas === */
+table {
+    border-collapse: collapse; /* Remove espaço entre bordas */
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === Tabela de Produtos === */
+.tabela-produtos {
+    border: 2px solid #3498db;
+}
+
+.tabela-produtos thead {
+    background-color: #3498db;
+    color: white;
+}
+
+.tabela-produtos th,
+.tabela-produtos td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Zebra striping - linhas alternadas */
+.tabela-produtos tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover em linhas */
+.tabela-produtos tbody tr:hover {
+    background-color: #e3f2fd;
+    cursor: pointer;
+}
+
+/* === Tabela de Vendas === */
+.tabela-vendas {
+    border: 1px solid #27ae60;
+}
+
+.tabela-vendas th {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.tabela-vendas td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Valores monetários alinhados à direita */
+.valor {
+    text-align: right;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Linha de total destacada */
+.total {
+    background-color: #f1c40f;
+    font-weight: bold;
+}
